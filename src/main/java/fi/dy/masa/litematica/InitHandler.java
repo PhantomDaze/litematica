@@ -17,6 +17,7 @@ import fi.dy.masa.litematica.data.DataManager;
 import fi.dy.masa.litematica.data.EntityDataManager;
 import fi.dy.masa.litematica.event.*;
 import fi.dy.masa.litematica.gui.GuiConfigs;
+import fi.dy.masa.litematica.network.SimpleSelectionHttpServer;
 import fi.dy.masa.litematica.render.infohud.StatusInfoRenderer;
 import fi.dy.masa.litematica.scheduler.ClientTickHandler;
 import fi.dy.masa.litematica.schematic.placement.PlacementManagerDaemonHandler;
@@ -65,6 +66,7 @@ public class InitHandler implements IInitializationHandler
         StatusInfoRenderer.init();
 
         ClientCommandHandler.INSTANCE.registerCommand(new PmCommand());
+        SimpleSelectionHttpServer.getInstance().start();
 
         DataManager.getAreaSelectionsBaseDirectory();
         DataManager.getSchematicsBaseDirectory();

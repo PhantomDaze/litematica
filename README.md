@@ -1,3 +1,6 @@
+注意，此为PhantomDaze修改后的版本，用于使Mineways自动同步投影mod的选区功能所选择的角点坐标 此功能在Mineways的View菜单中开启，需要保证投影mod和mineways运行在同一设备，38080端口不能被占用 需要搭配由我制作的修改版Mineways
+
+以下为原项目README:
 [![](https://jitpack.io/v/sakura-ryoko/litematica.svg)](https://jitpack.io/#sakura-ryoko/litematica)
 
 Litematica
